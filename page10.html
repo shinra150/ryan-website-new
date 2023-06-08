@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ryan's website</title>
+    <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <link href="css/preview.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/preview.js"></script>
+    <style>
+        body {
+            /*width: 90%;*/
+            /*max-width: 1100px;*/
+            margin: 2em auto;
+            font: 26px Arial, Helvetica, sans-serif;
+        }
+
+
+        show-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(0,0,0,0);
+            pointer-events: none;
+        }
+
+        #show img {
+            vertical-align: top;
+            cursor: pointer;
+            color: #000000;
+            cursor: pointer;
+            z-index:10;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div class="container">-->
+    <div style="height: 1100px; ">
+        <div class="container">
+            <div class="left-group"> <a href="index.html">HOME</a></div>
+            <div class="mid-group"></div>
+
+            <div class="right-group">
+
+                <footer>ABOUT</footer>
+            </div>
+        </div>
+
+        <!--The Modal-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <div id="show">
+            <img width="15%" height="20%" src="images/yiliaoxidai/2.jpg" style="position: absolute; left: 300px; top: 200px; z-index:99; " />
+            <img width="15%" height="25%" src="images/yiliaoxidai/3.jpg" style="position: absolute; left: 100px; top: 250px; z-index: 99; " />
+            <img width="15%" height="30%" src="images/yiliaoxidai/4.jpg" style="position: absolute; left: 100px; top: 550px; z-index: 99; " />
+            <img width="13%" height="30%" src="images/yiliaoxidai/5.jpg" style="position: absolute; left: 450px; top: 500px; z-index: 99; " />
+            <img width="12%" height="25%" src="images/yiliaoxidai/6.jpg" style="position: absolute; left: 550px; top: 250px; z-index: 99; " />
+            <img width="15%" height="20%" src="images/yiliaoxidai/7.jpg" style="position: absolute; left: 250px; top: 650px; z-index: 99; " />
+            <!--<img width="15%" height="20%" src="images/yiliaoxidai/7.jpg" style="position: absolute; left: 550px; top: 750px; z-index: 99; " />-->
+        </div>
+        <!--<div class="line" style="margin-top:50px;height:900px;"></div>
+
+        <div class="footer">
+
+            <footer>ABOUT</footer>
+        </div>-->
+        <div class="time">
+            <div class="item ">
+                <h5><span>2019</span></h5>
+                <p></p>
+            </div>
+            <div class="item">
+                <h5><span>2020</span></h5>
+            </div>
+            
+            <div class="item">
+                <h5><span>2021</span></h5>
+            </div>
+            <div class="item">
+                <h5><span>2022</span></h5>
+            </div>
+            <div class="curr_item">
+                <h3><span>2023</span></h3>
+                <ul>
+                    <li class="curr_item_day"><h6><strong>01.07</strong> </h6></li>
+                    <li class="others"><span>01.20</span></li>
+                    <li class="others"><span>04.03</span></li>
+                    <li class="others"><span>04.05</span></li>
+                    <li class="others"><span>04.20</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <img width="30%" height="40%" src="images/yiliaoxidai/1.jpg" style="z-index: -10;" />
+            </div>
+            <div style="width: 600px;">
+                <p class="title"><strong>医疗系带</strong></p>
+                <p class="category"><span>纸制品设计   纸张（异形海报）</span></p>
+                <p class="desc">
+                    医疗这个词对于任何家庭来说都一定有着特殊的意义，但不论是婴儿的诞生或是老者的逝去，
+                    生命的起始与结束都将化作印在白纸上的黑色字符，在医疗领域感情并无插足之地，只有数据
+                    才是最准确的记录者。我的家人在几年前得过大病，幸而及时控制了病情，而我将其在持续
+                    治疗的五年里的单据与图片素材收集起来，按照门类与时间进行排序，以图像化的方式
+                    记录了一路以来的治疗过程。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

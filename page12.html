@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ryan's website</title>
+    <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <link href="css/preview.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/preview.js"></script>
+    <style>
+        body {
+            /*width: 90%;*/
+            /*max-width: 1100px;*/
+            margin: 2em auto;
+            font: 26px Arial, Helvetica, sans-serif;
+        }
+
+
+        show-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(0,0,0,0);
+            pointer-events: none;
+        }
+
+        #show img {
+            vertical-align: top;
+            cursor: pointer;
+            color: #000000;
+            cursor: pointer;
+            z-index:10;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div class="container">-->
+    <div style="height: 1100px; ">
+        <div class="container">
+            <div class="left-group"> <a href="index.html">HOME</a></div>
+            <div class="mid-group"></div>
+
+            <div class="right-group">
+
+                <footer>ABOUT</footer>
+            </div>
+        </div>
+
+        <!--The Modal-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <div id="show">
+            <img width="15%" height="20%" src="images/guangpan/1.jpg" style="position: absolute; left: 300px; top: 200px; z-index:99; " />
+            <img width="15%" height="25%" src="images/guangpan/3.jpg" style="position: absolute; left: 100px; top: 250px; z-index: 99; " />
+            <img width="15%" height="30%" src="images/guangpan/4.jpg" style="position: absolute; left: 100px; top: 550px; z-index: 99; " />
+            <img width="13%" height="30%" src="images/guangpan/5.jpg" style="position: absolute; left: 450px; top: 500px; z-index: 99; " />
+            <img width="12%" height="25%" src="images/guangpan/6.jpg" style="position: absolute; left: 550px; top: 250px; z-index: 99; " />
+            <img width="15%" height="20%" src="images/guangpan/7.jpg" style="position: absolute; left: 250px; top: 650px; z-index: 99; " />
+            <!--<img width="15%" height="20%" src="images/guangpan/7.jpg" style="position: absolute; left: 550px; top: 750px; z-index: 99; " />-->
+        </div>
+        <!--<div class="line" style="margin-top:50px;height:900px;"></div>
+
+        <div class="footer">
+
+            <footer>ABOUT</footer>
+        </div>-->
+        <div class="time">
+            <div class="item ">
+                <h5><span>2019</span></h5>
+                <p></p>
+            </div>
+            <div class="item">
+                <h5><span>2020</span></h5>
+            </div>
+            
+            <div class="item">
+                <h5><span>2021</span></h5>
+            </div>
+            <div class="item">
+                <h5><span>2022</span></h5>
+            </div>
+            <div class="curr_item">
+                <h3><span>2023</span></h3>
+                <ul>
+                    <li class="others"><span>01.07</span></li>
+                    <li class="others"><span>01.20</span></li>
+                    <li class="curr_item_day"><h6><strong>04.03</strong> </h6></li>
+                    <li class="others"><span>04.05</span></li>
+                    <li class="others"><span>04.20</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <img width="30%" height="40%" src="images/guangpan/2.jpg" style="z-index: -10;" />
+            </div>
+            <div style="width: 600px;">
+                <p class="title"><strong>光盘的代价</strong></p>
+                <p class="category"><span>信息设计   纸张（折页&模拟包装）</span></p>
+                <p class="desc">
+                    光盘对现在的我们而言是一个相对有年代感的词汇，也是00年代的遗留产物，但光盘在逐渐退出
+                    历史舞台时还是留存了相当可观的污染残留，这些污染可能需要成百甚至上千年才能被彻底降解，
+                    本项目使用了信息图表设计，尝试使用更直观的可视化设计来让大家意识到这样隐形的污染。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

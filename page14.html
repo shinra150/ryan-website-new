@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ryan's website</title>
+    <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <link href="css/preview.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/preview.js"></script>
+    <style>
+        body {
+            /*width: 90%;*/
+            /*max-width: 1100px;*/
+            margin: 2em auto;
+            font: 26px Arial, Helvetica, sans-serif;
+        }
+
+
+        show-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(0,0,0,0);
+            pointer-events: none;
+        }
+
+        #show img {
+            vertical-align: top;
+            cursor: pointer;
+            color: #000000;
+            cursor: pointer;
+            z-index:10;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div class="container">-->
+    <div style="height: 1100px; ">
+        <div class="header">
+            <!--<header></header>-->
+            <a href="index.html">HOME</a>
+        </div>
+
+        <!--The Modal-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <div id="show">
+            <img width="15%" height="20%" src="images/1100/1.jpg" style="position: absolute; left: 300px; top: 200px; z-index:99; " />
+            <img width="15%" height="25%" src="images/1100/2.jpg" style="position: absolute; left: 100px; top: 250px; z-index: 99; " />
+            <img width="15%" height="30%" src="images/1100/3.png" style="position: absolute; left: 100px; top: 550px; z-index: 99; " />
+            <img width="13%" height="30%" src="images/1100/4.png" style="position: absolute; left: 450px; top: 500px; z-index: 99; " />
+            <img width="12%" height="25%" src="images/1100/5.png" style="position: absolute; left: 550px; top: 250px; z-index: 99; " />
+            <video width="15%" height="25%" autoplay="autoplay" style="position: absolute; left: 350px; top: 750px; z-index:98; ">
+    <source src="images/1100/1.mp4" type="video/mp4" />
+</video>
+
+        </div>
+        <div class="line" style="margin-top:50px;height:900px;"></div>
+
+        <div class="footer">
+
+            <footer>ABOUT</footer>
+        </div>
+        <div class="time">
+            <div class="item ">
+                <h5><span>2019</span></h5>
+                <p></p>
+            </div>
+            <div class="item">
+                <h5><span>2020</span></h5>
+            </div>
+            
+            <div class="item">
+                <h5><span>2021</span></h5>
+            </div>
+            <div class="item">
+                <h5><span>2022</span></h5>
+            </div>
+            <div class="curr_item">
+                <h3><span>2023</span></h3>
+                <ul>
+                    <li class="others"><span>01.07</span></li>
+                    <li class="others"><span>01.20</span></li>
+                    <li class="others"><span>04.03</span></li>
+                    <li class="others"><span>04.05</span></li>
+                    <li class="curr_item_day"><h6><strong>04.20</strong> </h6></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <img width="30%" height="40%" src="images/1100/1.jpg" style="z-index: -10;" />
+            </div>
+            <div style="width: 600px;">
+                <p class="title"><strong>1比100</strong></p>
+                <p class="category"><span>小型展览   纸张（书籍封面&内页）</span></p>
+                <p class="desc">
+                    ai绘画技术的诞生伴随着模仿与复制素材的诟病，依照古典派的说法，在ai作画时被裁切并
+                    拼凑的素材即会失去属于自己的原真性，那么若是让ai生成一副世人皆知的名作，那么它诞生
+                    的时候到底是拥有属于名画本身的原真性，亦或只是无数不知来处的素材碎片的集合体？我将
+                    使用100个不同ai，用同样的代码输入，并收集经过演算后的图片，汇总成一本虚假的“名画”
+                    拍卖册，探究真实与凭空捏造的界限。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

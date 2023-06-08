@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ryan's website</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 1500px;
+            margin: 2em auto;
+            font: 26px Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+        .home {
+            color: #000000;
+            cursor: pointer;
+            width: 50%;
+            position: relative;
+        }
+
+        .year {
+            color: #000000;
+            cursor: pointer;
+            width: 40%;
+            height: 800px;
+            position: relative;
+            left: 40%;
+            top: 150px;
+        }
+
+        .home:hover {
+            color: #f0f0f0;
+            cursor: pointer;
+        }
+
+
+
+        .ul-left {
+            padding-top: 100px;
+        }
+
+            .ul-left li {
+                width: 55%;
+                padding: 10px 10px;
+                text-align: right;
+                list-style: none;
+            }
+
+                .ul-left li:active {
+                    width: 55%;
+                    color: #f0f0f0;
+                    cursor: pointer;
+                }
+
+                .ul-left li:hover {
+                    width: 55%;
+                    color: black;
+                    cursor: pointer;
+                }
+
+        .ul-right {
+            margin-top: -840px;
+            position: relative;
+            left: 55%;
+        }
+
+            .ul-right li {
+                width: 200px;
+                padding: 60px 0px 55px 0px;
+                text-align: left;
+                list-style: none;
+            }
+        .header {
+            position: relative;
+            left: 10%;
+            z-index:-99;
+            width:40%;
+            float:left;
+            
+        }
+        .footer {
+            position: relative;
+            left: 45%;
+            z-index: -99;
+        }
+
+
+        .left-group{
+            width: 40%;
+            text-align: center;
+        }
+        .right-group {
+            width: 40%;
+        }
+
+        .mid-group {
+            flex: 1;
+            text-align: center;
+            background-image: url('images/bg.png');
+            background-repeat:no-repeat;
+            /*width: 70px;*/
+            height: 1000px;
+        }
+        .container {
+            position: absolute;
+            width: 100%;
+            display: flex;
+        }
+
+         /*background-size: cover; background-size: 100% 100%; background-repeat: no-repeat; padding: 80px 0px 0px 0px;*/
+   </style>
+    <script type="text/javascript">
+        function Show(url) {
+            window.location.href = url;
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <!--<div class="container">-->
+    <div>
+        <div class="container">
+            <div class="left-group"> <header>HOME</header></div>
+            <div class="mid-group"></div>
+
+            <div class="right-group">
+
+                <footer>ABOUT</footer>
+            </div>
+        </div>
+        <!--<div id="home" style="height:800px;overflow-y:auto ;width:600px;margin-top:100px;">-->
+
+        <div id="home" class="home">
+            <ul class="ul-left">
+                <li id="l1" onclick="Show('page1.html')">Aroma</li>
+                <li id="l2" onclick="Show('page2.html')">Far District</li>
+                <li id="l3" onclick="Show('page3.html')">文字中的“垃圾”</li>
+                <li id="l4" onclick="Show('page4.html')">查漏补缺</li>
+                <li id="l5" onclick="Show('page5.html')">方河体</li>
+                <li id="l6" onclick="Show('page6.html')">photography&cover design</li>
+                <li id="l7" onclick="Show('page7.html')">adidas_with you</li>
+                <li id="l8" onclick="Show('page8.html')">漂流盒子</li>
+                <li id="l9" onclick="Show('page9.html')">WHAT ARE YOU LOOKING FOR</li>
+                <li id="l10" onclick="Show('page10.html')">医疗系带</li>
+                <li id="l11" onclick="Show('page11.html')">返乡</li>
+                <li id="l12" onclick="Show('page12.html')">光盘的代价</li>
+                <li id="l13" onclick="Show('page13.html')">816重生计划</li>
+                <li id="l14" onclick="Show('page14.html')">1:100</li>
+            </ul>
+        </div>
+        <!--<div style="background-image: url('images/bg.png'); width: 70px; height: 800px; margin-left: 50%; position: relative; margin-top: -850px; background-size: cover; background-size: 100% 100%; background-repeat: no-repeat; padding: 80px 0px 0px 0px;"></div>-->
+        <!--<div style="height: 800px; overflow-y: auto; width: 400px; margin-left: 400px; position: relative; margin-top:100px;">-->
+        <div id="year" class="year">
+
+            <ul class="ul-right">
+                <li>2019</li>
+                <li>2020</li>
+                <li>2021</li>
+                <li>2022</li>
+                <li>2023</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--<img width="100%" height="100%" src="images/background.jpg" style="position:absolute;left:0;top:0;z-index:-1;/">-->
+    <!--</div>-->
+</body>
+</html>

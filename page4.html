@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ryan's website</title>
+    <link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <link href="css/preview.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/preview.js"></script>
+    <style>
+        body {
+            /*width: 90%;*/
+            /*max-width: 1100px;*/
+            margin: 2em auto;
+            font: 26px Arial, Helvetica, sans-serif;
+        }
+
+
+        show-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(0,0,0,0);
+            pointer-events: none;
+        }
+
+        #show img {
+            vertical-align: top;
+            cursor: pointer;
+            color: #000000;
+            cursor: pointer;
+            z-index:10;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div class="container">-->
+    <div style="height: 1100px; ">
+        <div class="container">
+            <div class="left-group"> <a href="index.html">HOME</a></div>
+            <div class="mid-group"></div>
+
+            <div class="right-group">
+
+                <footer>ABOUT</footer>
+            </div>
+        </div>
+
+        <!--The Modal-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <div id="show">
+            <!--<img width="20%" height="25%" src="images/chaquebulou/1.jpg" style="position: absolute; left: 300px; top: 200px; z-index: index auto; " />
+            <img width="20%" height="30%" src="images/chaquebulou/2.jpg" style="position: absolute; left: 100px; top: 250px; z-index: index auto; " />
+            <img width="20%" height="30%" src="images/chaquebulou/3.jpg" style="position: absolute; left: 100px; top: 550px; z-index: index auto; " />
+            <img width="15%" height="35%" src="images/chaquebulou/4.jpg" style="position: absolute; left: 450px; top: 500px; z-index: index auto; " />
+            <img width="12%" height="30%" src="images/chaquebulou/5.jpg" style="position: absolute; left: 550px; top: 250px; z-index: index auto; " />
+            <img width="20%" height="25%" src="images/chaquebulou/6.jpg" style="position: absolute; left: 250px; top: 650px; z-index: index auto; " />-->
+            <img width="15%" height="20%" src="images/chaquebulou/1.jpg" style="position: absolute; left: 300px; top: 200px; z-index:99; " />
+            <img width="15%" height="25%" src="images/chaquebulou/2.jpg" style="position: absolute; left: 100px; top: 250px; z-index: 99; " />
+            <img width="15%" height="30%" src="images/chaquebulou/3.jpg" style="position: absolute; left: 100px; top: 550px; z-index: 99; " />
+            <img width="13%" height="30%" src="images/chaquebulou/4.jpg" style="position: absolute; left: 450px; top: 500px; z-index: 99; " />
+            <img width="12%" height="25%" src="images/chaquebulou/5.jpg" style="position: absolute; left: 550px; top: 250px; z-index: 99; " />
+            <img width="15%" height="20%" src="images/chaquebulou/6.jpg" style="position: absolute; left: 250px; top: 650px; z-index: 99; " />
+        </div>
+        <!--<div class="line" style="margin-top:50px;height:900px;"></div>
+
+        <div class="footer">
+
+            <footer>ABOUT</footer>
+        </div>-->
+        <div class="time">
+            <div class="item ">
+                <h5><span>2019</span></h5>
+                <p></p>
+            </div>
+            <div class="item">
+                <h5><span>2020</span></h5>
+            </div>
+            
+            <div class="item">
+                <h5><span>2021</span></h5>
+            </div>
+            <div class="curr_item">
+                <h3><span>2022</span></h3>
+                <ul>
+                    <li class="others"><span>03.23</span></li>
+                    <li class="curr_item_day"><h6><strong>03.28</strong> </h6></li>
+                    <li class="others"><span>04.25</span></li>
+                    <li class="others"><span>06.26</span></li>
+                    <li class="others"><span>07.01</span></li>
+                    <li class="others"><span>11.08</span></li>
+                    <li class="others"><span>12.22</span></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h5><span>2023</span></h5>
+            </div>
+        </div>
+        <div class="center">
+            <div>
+                <img width="30%" height="40%" src="images/cover1.jpg" style="z-index: -10;" />
+            </div>
+            <div style="width: 600px;">
+                <p class="title"><strong>查漏补缺</strong></p>
+                <p class="category"><span>书籍   电子排版</span></p>
+                <p class="desc">
+                    选取了城市中含有错字或者已经缺损的招牌、广告，尝试探索其背后的故事与意义。
+                    将诗意的排版和理性的排版组合，并运用硫酸纸来增加书籍的趣味性。将图片的内容印在硫酸纸上，根据硫酸纸可透叠的特性，使图片和文字构成新的排版。
+                </p>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+</html>
